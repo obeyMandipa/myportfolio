@@ -1,7 +1,4 @@
-  <script >
-  </script>
-
-  <template>
+<template>
     
     <main>
 
@@ -11,9 +8,18 @@
             <p class="text-[50px] text-orange-600 font-bold mt-[-30px]">R<span class="text-black">ufaro</span> </p>
             <ul class="flex gap-8 ml-8"> <!-- Add space between list items -->
               <li class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Home</li>
-              <li class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Skills</li>
-              <li class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Projects</li>
-              <li class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Resume</li>
+              <li @click="scrollToSection('skills')" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Skills</li>
+              <li @click="scrollToSection('projects')" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Projects</li>
+              <li onclick="my_modal_4.showModal()" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer ">Resume</li>
+              <dialog id="my_modal_4" class="modal">
+                <div class="modal-box w-[1000px] max-w-5xl h-[900px]">
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button, it will close the modal -->
+                      <button class="btn btn-sm btn-circle btn-ghost bg-orange-600 text-white hover:text-orange-600 hover:bg-gray-50 font-bolder text-[18px] absolute right-2 top-2">✕</button>                    </form>
+                  </div>
+                </div>
+              </dialog>
               <li class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Contact</li>
             </ul>
           </div>
@@ -39,44 +45,86 @@
             </div>
           </div>
 
-          <div class="w-[700px] h-[800px] bg-blue-200">
-
+          <div class="w-[700px] h-[600px] ">
+            <img class="w-[700px] h-[600px] border-2 border-black" src="" alt="">
           </div>
         </div>
 
       </section>
 
-      <section class="skills ">
-        <div class="ml-[270px] mt-[60px]">
-          <p class="absolute mt-[-10px]"><span class="text-orange-600  pt-[-60px]">*</span>Skills</p>
+      <section id="skills" class="skills p-[20px]">
+        <div class="ml-[270px] ">
+          <p class=""><span class="text-orange-600  pt-[-60px]">*</span>Skills</p>
           <p class="text-[60px] font-bold ">What i can do for you!</p>
           <p class="w-[550px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, nihil. Quos non maiores, nostrum est molestias amet quaerat ducimus natus praesentium tempore ex dolores asperiores dolorum dicta molestiae a quod.</p>
         </div>
 
         <div class="flex justify-center mt-[60px] space-x-[80px]">
-          <div class="w-[400px] h-[500px] border-orange-600  border-l-[5px] border-t-[5px] rounded-[20px] shadow-2xl"></div>
-          <div class="w-[400px] h-[500px] border-orange-600  border-l-[5px] border-b-[5px] rounded-[20px] shadow-2xl"></div>
-          <div class="w-[400px] h-[500px] border-orange-600  border-l-[5px] border-t-[5px] rounded-[20px] shadow-2xl"></div>
+          <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl"></div>
+          <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-b-[2px] rounded-[10px] shadow-2xl"></div>
+          <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl"></div>
         </div>
       </section>
 
-      <section class="projects">
+      <section id="projects" class="projects p-[20px]">
 
-        <div class="absolute ml-[270px] mt-[80px]">
-          <p class="absolute mt-[-10px]"><span class="text-orange-600  pt-[-60px]">*</span>Projects</p>
-          <p class="text-[60px] font-bold ">What i have done!</p>
+        <div class="relative ml-[270px]">
+          <div class=""><span class="text-orange-600  pt-[-60px]">*</span>Projects</div>
+          <div class="text-[60px] font-bold ">What i have done!</div>
+          <p class="w-[550px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, nihil. Quos non maiores, nostrum est molestias amet quaerat ducimus natus praesentium tempore ex dolores asperiores dolorum dicta molestiae a quod.</p>
         </div>
         
+        <div class=" flex justify-center space-x-[80px] mt-[60px]">
+          <div class="animate__animated animate__bounce w-[400px] h-[500px] rounded-[10px] shadow-2xl"></div>
+          <div class="w-[400px] h-[500px] rounded-[10px] shadow-2xl"></div>
+          <div class="w-[400px] h-[500px] rounded-[10px] shadow-2xl"></div>
+        </div>
       </section>
 
       <section>
-
       </section>
     </main>
 
     <footer></footer>
-  
-  </template>
+</template>
+
+<script >
+    export default {
+      methods: {
+        scrollToSection(sectionId) {
+          const section = document.getElementById(sectionId);
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        },
+      },
+
+      mounted() {
+        setTimeout(() => {
+          const fadeInElements = document.querySelectorAll('.fade-in');
+
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+                  observer.unobserve(entry.target); // Stop observing after animation
+                }
+              });
+            },
+            {
+              threshold: 0.1, // Trigger when 10% of the element is visible
+            }
+          );
+
+          fadeInElements.forEach((element) => {
+            observer.observe(element);
+          });
+        }, 100); // Delay of 100ms
+      },
+    };
+
+  </script>
 
   <style scoped>
   *{
@@ -97,6 +145,17 @@
     height: 100vh;
     background-color: #f8f0e2;
   }
+
+  .fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Reduced duration for testing */
+}
+
+.fade-in.visible {
+  opacity: 1; /* Corrected opacity */
+  transform: translateY(0);
+}
 
   
   </style>
