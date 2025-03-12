@@ -60,9 +60,48 @@
         </div>
 
         <div class="flex justify-center mt-[60px] space-x-[80px]">
-          <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl"></div>
-          <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-b-[2px] rounded-[10px] shadow-2xl"></div>
-          <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl"></div>
+          <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl">
+            <h1>UI/UX design</h1>
+
+            <p>
+              Our UI/UX design services focus on creating seamless and intuitive digital experiences that captivate users and drive engagement. 
+              We combine creativity with usability to craft visually stunning interfaces that elevate your brand and enhance user satisfaction.
+            </p>
+            <h3>Key features</h3>
+            <ul>
+              <li>User-Centered Design</li>
+              <li>Visual Design</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+          <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-b-[2px] rounded-[10px] shadow-2xl">
+            <h1>Search Engine Optimisation</h1>
+            <p>
+              Our SEO services are designed to improve your website's visibility in search engine results and drive organic traffic to your online platform. 
+              We employ proven strategies and best practices to enhance your website's search engine ranking and boost your online presence.
+            </p>
+            <h3>Key features</h3>
+            <ul>
+              <li>Keyword Research</li>
+              <li>On-Page Optimization</li>
+              <li>Technical SEO</li>
+            </ul>
+
+          </div>
+          <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl">
+            <h1>Web hosting and maintance</h1>
+            <p>
+              Our web hosting and maintenance services offer a comprehensive solution to ensure your website remains secure, up-to-date, and accessible to your audience at all times.
+               We take care of the technical aspects of hosting and maintenance so you can focus on growing your online presence.
+            </p>
+            <h3>Key features </h3>
+            <ul>
+              <li>Reliable Hosting</li>
+              <li>Secuity monitoring</li>
+              <li>Technical Support</li>
+            </ul>
+
+          </div>
         </div>
       </section>
 
