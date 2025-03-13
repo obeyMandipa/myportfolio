@@ -10,16 +10,10 @@
               <li class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Home</li>
               <li @click="scrollToSection('skills')" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Skills</li>
               <li @click="scrollToSection('projects')" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Projects</li>
+              
               <li onclick="my_modal_4.showModal()" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer ">Resume</li>
-              <dialog id="my_modal_4" class="modal">
-                <div class="modal-box w-[1000px] max-w-5xl h-[900px]">
-                  <div class="modal-action">
-                    <form method="dialog">
-                      <!-- if there is a button, it will close the modal -->
-                      <button class="btn btn-sm btn-circle btn-ghost bg-orange-600 text-white hover:text-orange-600 hover:bg-gray-50 font-bolder text-[18px] absolute right-2 top-2">✕</button>                    </form>
-                  </div>
-                </div>
-              </dialog>
+              <Resume/>
+
               <li class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Contact</li>
             </ul>
           </div>
@@ -61,13 +55,13 @@
 
         <div class="flex justify-center mt-[60px] space-x-[80px]">
           <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl">
-            <h1>UI/UX design</h1>
+            <h1 class="text-[25px] font-bold ">UI/UX design</h1>
 
-            <p>
-              Our UI/UX design services focus on creating seamless and intuitive digital experiences that captivate users and drive engagement. 
+            <p class="">
+              <span class=" text-[40px] font-bold text-orange-600 mt-[100px]">O</span>ur UI/UX design services focus on creating seamless and intuitive digital experiences that captivate users and drive engagement. 
               We combine creativity with usability to craft visually stunning interfaces that elevate your brand and enhance user satisfaction.
             </p>
-            <h3>Key features</h3>
+            <h3 class="text-[20px] font-bold ">Key features</h3>
             <ul>
               <li>User-Centered Design</li>
               <li>Visual Design</li>
@@ -128,6 +122,9 @@
 </template>
 
 <script >
+import Resume from './components/Resume.vue';
+
+
     export default {
       methods: {
         scrollToSection(sectionId) {
@@ -136,6 +133,10 @@
             section.scrollIntoView({ behavior: 'smooth' });
           }
         },
+      },
+
+      components: {
+        Resume
       },
 
       mounted() {
