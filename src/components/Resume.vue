@@ -84,7 +84,7 @@
 
             </div>
             <br>
-            <div class="btn bg-white text-orange-600 hover:bg-orange-600 hover:text-white">Download Resume</div>
+            <div @click="download" class="btn bg-white text-orange-600 hover:bg-orange-600 hover:text-white">Download Resume</div>
           </form>
         </div>
       </div>
@@ -93,6 +93,8 @@
 </template>
 
 <script>
+import pdfFile from '../assets/resume/cv for Rufaro mandipa.pdf';
+
 export default {
   name: 'Resume',
   created() {
@@ -106,6 +108,19 @@ export default {
    
   },
   methods: {
+    download() {
+      // Create a temporary anchor element
+      const link = document.createElement('a');
+      link.href = pdfFile;
+      link.download = 'Rufaro_Mandipa_Resume.pdf'; // Specify the default filename
+      document.body.appendChild(link);
+
+      // Trigger the download
+      link.click();
+
+      // Clean up
+      document.body.removeChild(link);
+    },
    
   },
 }
