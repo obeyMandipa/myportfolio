@@ -33,8 +33,8 @@
 
             <div class="flex items-center">
               <p>Check out my social _____</p>
-              <a href="https://github.com/obeyMandipa"><img src="https://cdn-icons-png.flaticon.com/128/6424/6424084.png" alt="github" class="h-[35px] w-[35px] rounded-full"></a> 
-              <a href="https://www.linkedin.com/in/rufaro-mandipa-9b4259242?"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422202.png" alt="linkedIn" class="h-[37px] w-[37px] mt-[10px]"></a> 
+              <a href="https://github.com/obeyMandipa" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/6424/6424084.png" alt="github" class="h-[35px] w-[35px] rounded-full"></a> 
+              <a href="https://www.linkedin.com/in/rufaro-mandipa-9b4259242?" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422202.png" alt="linkedIn" class="h-[37px] w-[37px] mt-[10px]"></a> 
             </div>
           </div>
 
