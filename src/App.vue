@@ -28,7 +28,6 @@
             <div class="">
               <button class="h-[50px] w-[120px] bg-orange-600">Lets talk</button>
               <button class="h-[50px] w-[120px] bg-orange-600">View projects</button>
-
             </div>
 
             <div class="flex items-center">
@@ -38,8 +37,8 @@
             </div>
           </div>
 
-          <div class="w-[700px] h-[600px] ">
-            <img class="w-[700px] h-[600px] border-2 border-black" src="" alt="">
+          <div class="w-[700px] h-[600px] ">          
+            <!-- <img class="w-[700px] h-[600px] border-2 border-black" src="" alt=""> -->
           </div>
         </div>
 
@@ -56,42 +55,42 @@
           <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl">
             <h1 class="text-[25px] font-bold ">UI/UX design</h1>
 
-            <p class="">
-              <span class=" text-[40px] font-bold text-orange-600 mt-[100px]">O</span>ur UI/UX design services focus on creating seamless and intuitive digital experiences that captivate users and drive engagement. 
+            <p class="mt-[40px]">
+              <span class="drop-cap text-orange-600">O</span>ur UI/UX design services focus on creating seamless and intuitive digital experiences that captivate users and drive engagement. 
               We combine creativity with usability to craft visually stunning interfaces that elevate your brand and enhance user satisfaction.
             </p>
-            <h3 class="text-[20px] font-bold ">Key features</h3>
+            <h3 class="text-[20px] font-bold mt-[40px] ">Key features</h3>
             <ul>
-              <li>User-Centered Design</li>
-              <li>Visual Design</li>
-              <li>Responsive Design</li>
+              <li> <span class="text-orange-600">●</span>User-Centered Design</li>
+              <li><span class="text-orange-600">●</span>Visual Design</li>
+              <li><span class="text-orange-600">●</span>Responsive Design</li>
             </ul>
           </div>
           <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-b-[2px] rounded-[10px] shadow-2xl">
-            <h1>Search Engine Optimisation</h1>
-            <p>
-              Our SEO services are designed to improve your website's visibility in search engine results and drive organic traffic to your online platform. 
+            <h1 class="text-[25px] font-bold ">Search Engine Optimisation</h1>
+            <p class="mt-[40px]">
+              <span class="drop-cap text-orange-600">O</span>ur SEO services are designed to improve your website's visibility in search engine results and drive organic traffic to your online platform. 
               We employ proven strategies and best practices to enhance your website's search engine ranking and boost your online presence.
             </p>
-            <h3>Key features</h3>
+            <h3 class="mt-[40px] text-[20px] font-bold">Key features</h3>
             <ul>
-              <li>Keyword Research</li>
-              <li>On-Page Optimization</li>
-              <li>Technical SEO</li>
+              <li><span class="text-orange-600">●</span>Keyword Research</li>
+              <li><span class="text-orange-600">●</span>On-Page Optimization</li>
+              <li><span class="text-orange-600">●</span>Technical SEO</li>
             </ul>
 
           </div>
           <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl">
-            <h1>Web hosting and maintance</h1>
-            <p>
-              Our web hosting and maintenance services offer a comprehensive solution to ensure your website remains secure, up-to-date, and accessible to your audience at all times.
+            <h1 class="text-[25px] font-bold ">Web hosting and maintance</h1>
+            <p class="mt-[40px]">
+              <span class="drop-cap text-orange-600">O</span>ur web hosting and maintenance services offer a comprehensive solution to ensure your website remains secure, up-to-date, and accessible to your audience at all times.
                We take care of the technical aspects of hosting and maintenance so you can focus on growing your online presence.
             </p>
-            <h3>Key features </h3>
+            <h3 class="text-[25px] font-bold mt-[40px]">Key features </h3>
             <ul>
-              <li>Reliable Hosting</li>
-              <li>Secuity monitoring</li>
-              <li>Technical Support</li>
+              <li><span class="text-orange-600">●</span>Reliable Hosting</li>
+              <li><span class="text-orange-600">●</span>Secuity monitoring</li>
+              <li><span class="text-orange-600">●</span>Technical Support</li>
             </ul>
 
           </div>
@@ -195,6 +194,14 @@ import Resume from './components/Resume.vue';
   opacity: 1; /* Corrected opacity */
   transform: translateY(0);
 }
+
+.drop-cap {
+    float: left;
+    font-size: 4.5rem; /* Adjust size as needed */
+    line-height: 0.8; /* Adjust line height to align properly */
+    margin-right: 0.5rem; /* Space between the drop cap and the rest of the text */
+    font-weight: bold; /* Optional: Make the drop cap bold */
+  }
 
   
   </style>
