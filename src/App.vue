@@ -3,7 +3,7 @@
     <main>
 
       <section class="home">
-        <header class="border-b-2 h-[80px] bg-[#f8f0e2]">
+        <header class="border-b-2 h-[80px] bg-[#ffffff]">
           <div class="flex justify-center items-center gap-28"> <!-- Center the div -->
             <p class="text-[50px] text-orange-600 font-bold mt-[-30px]">R<span class="text-black">ufaro</span> </p>
             <ul class="flex gap-8 ml-8"> <!-- Add space between list items -->
@@ -12,16 +12,15 @@
               <li @click="scrollToSection('projects')" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Projects</li>
               
               <li onclick="my_modal_4.showModal()" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer ">Resume</li>
-              <Resume/>
+              <!-- <Resume /> -->
 
-              <li class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Contact</li>
             </ul>
           </div>
         </header>
 
         <div class="flex justify-center mt-[60px] ">
           <div class="w-[700px] mt-[60px]">
-            <p class="absolute mt-[5px]"><span class="text-orange-600  pt-[-60px]">*</span>Web developer</p>
+            <p class="absolute mt-[-50px]"><span class="text-orange-600 text-[60px] mt-[20px] pt-[-60px]">*</span>Web developer</p>
             <p class="text-[80px] font-bold ">Hello! I am Rufaro Mandipa</p>
             <p class="w-[550px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores fugit sequi iure ipsam sed temporibus! Odio magnam accusamus eos quia, facere soluta expedita laudantium dolorem, pariatur voluptates quod iste aspernatur!</p>
 
@@ -37,8 +36,9 @@
             </div>
           </div>
 
-          <div class="w-[700px] h-[600px] ">          
-            <!-- <img class="w-[700px] h-[600px] border-2 border-black" src="" alt=""> -->
+          <div class="w-[700px] h-[600px] ">
+          
+              <!-- <img class="w-[700px] h-[600px] border-2 border-white" src="../src/assets/images/propic.png" alt=""> -->
           </div>
         </div>
 
@@ -46,7 +46,7 @@
 
       <section id="skills" class="skills p-[20px]">
         <div class="ml-[270px] ">
-          <p class=""><span class="text-orange-600  pt-[-60px]">*</span>Skills</p>
+          <p class=""><span class="text-orange-600  text-[60px] pt-[-60px]">*</span>Skills</p>
           <p class="text-[60px] font-bold ">What i can do for you!</p>
           <p class="w-[550px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, nihil. Quos non maiores, nostrum est molestias amet quaerat ducimus natus praesentium tempore ex dolores asperiores dolorum dicta molestiae a quod.</p>
         </div>
@@ -100,16 +100,19 @@
       <section id="projects" class="projects p-[20px]">
 
         <div class="relative ml-[270px]">
-          <div class=""><span class="text-orange-600  pt-[-60px]">*</span>Projects</div>
+          <div class=""><span class="text-orange-600  text-[60px]  pt-[-60px]">*</span>Projects</div>
           <div class="text-[60px] font-bold ">What i have done!</div>
           <p class="w-[550px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, nihil. Quos non maiores, nostrum est molestias amet quaerat ducimus natus praesentium tempore ex dolores asperiores dolorum dicta molestiae a quod.</p>
         </div>
         
-        <div class=" flex justify-center space-x-[80px] mt-[60px]">
-          <div class="animate__animated animate__bounce w-[400px] h-[500px] rounded-[10px] shadow-2xl"></div>
-          <div class="w-[400px] h-[500px] rounded-[10px] shadow-2xl"></div>
-          <div class="w-[400px] h-[500px] rounded-[10px] shadow-2xl"></div>
-        </div>
+        <div class="flex justify-center space-x-[80px] mt-[60px]">
+  <div class="w-[400px] h-[500px] rounded-[10px] shadow-2xl opacity-0 transform -translate-x-full transition-transform duration-1000 ease-in-out"
+       ref="elementToSlideIn1"></div>
+  <div class="w-[400px] h-[500px] rounded-[10px] shadow-2xl opacity-0 transform -translate-x-full transition-transform duration-500 ease-in-out"
+       ref="elementToSlideIn2"></div>
+  <div class="w-[400px] h-[500px] rounded-[10px] shadow-2xl opacity-0 transform -translate-x-full transition-transform duration-3000 ease-in-out"
+       ref="elementToSlideIn3"></div>
+</div>
       </section>
 
       <section>
@@ -120,10 +123,26 @@
 </template>
 
 <script >
-import Resume from './components/Resume.vue';
-
+// import Resume from './components/Resume.vue';
+import { slideInMixin } from './slideInMixin.js';
 
     export default {
+
+    //   data() {
+    //   return {
+    //     inView: false
+    //   };
+    // },
+
+      mixins: [slideInMixin],
+
+      // mounted() {
+      //   window.addEventListener('scroll', this.handleScroll);
+      // },
+      // destroyed() {
+      //   window.removeEventListener('scroll', this.handleScroll);
+      // },
+
       methods: {
         scrollToSection(sectionId) {
           const section = document.getElementById(sectionId);
@@ -131,35 +150,37 @@ import Resume from './components/Resume.vue';
             section.scrollIntoView({ behavior: 'smooth' });
           }
         },
+
+        // handleScroll() {
+        //   const element = this.$refs.elementToSlideIn;
+        //   const elementPosition = element.getBoundingClientRect();
+        //   const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+          
+        //   // Check if the element is in the viewport
+        //   if (elementPosition.top < viewportHeight && elementPosition.bottom >= 0) {
+        //     this.inView = true;
+        //   } else {
+        //     this.inView = false;
+        //   }
+        // }
       },
 
-      components: {
-        Resume
-      },
+    //   watch: {
+    //     inView(newVal) {
+    //       if (newVal) {
+    //         this.$refs.elementToSlideIn.style.opacity = 1;
+    //         this.$refs.elementToSlideIn.style.transform = 'translateX(0)';
+    //       } else {
+    //         this.$refs.elementToSlideIn.style.opacity = 0;
+    //         this.$refs.elementToSlideIn.style.transform = 'translateX(-100%)';
+    //       }
+    //     },
+    // },
 
-      mounted() {
-        setTimeout(() => {
-          const fadeInElements = document.querySelectorAll('.fade-in');
+    // components: {
+      //   Resume,
+      // },
 
-          const observer = new IntersectionObserver(
-            (entries) => {
-              entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                  entry.target.classList.add('visible');
-                  observer.unobserve(entry.target); // Stop observing after animation
-                }
-              });
-            },
-            {
-              threshold: 0.1, // Trigger when 10% of the element is visible
-            }
-          );
-
-          fadeInElements.forEach((element) => {
-            observer.observe(element);
-          });
-        }, 100); // Delay of 100ms
-      },
     };
 
   </script>
@@ -171,17 +192,17 @@ import Resume from './components/Resume.vue';
 
   .home {
     height: 100vh;
-    background-color: #f8f0e2;
+    background-color: #ffffff;
   }
 
   .skills {
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #fffaf3;
   }
 
   .projects {
     height: 100vh;
-    background-color: #f8f0e2;
+    background-color: #ffffff;
   }
 
   .fade-in {
