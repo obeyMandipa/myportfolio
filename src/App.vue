@@ -51,8 +51,9 @@
           <p class="w-[550px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, nihil. Quos non maiores, nostrum est molestias amet quaerat ducimus natus praesentium tempore ex dolores asperiores dolorum dicta molestiae a quod.</p>
         </div>
 
-        <div class="flex justify-center mt-[60px] space-x-[80px]">
-          <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl">
+        <div class=" flex justify-center mt-[60px] space-x-[80px]">
+
+          <div ref="element1"  class="animate-zoom-in  w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl">
             <h1 class="text-[25px] font-bold ">UI/UX design</h1>
 
             <p class="mt-[40px]">
@@ -66,7 +67,8 @@
               <li><span class="text-orange-600">●</span>Responsive Design</li>
             </ul>
           </div>
-          <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-b-[2px] rounded-[10px] shadow-2xl">
+
+          <div ref="element2" class="animate-fade-in-right w-[400px] h-[500px] border-orange-600  border-l-[2px] border-b-[2px] rounded-[10px] shadow-2xl">
             <h1 class="text-[25px] font-bold ">Search Engine Optimisation</h1>
             <p class="mt-[40px]">
               <span class="drop-cap text-orange-600">O</span>ur SEO services are designed to improve your website's visibility in search engine results and drive organic traffic to your online platform. 
@@ -80,7 +82,8 @@
             </ul>
 
           </div>
-          <div class="w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl">
+
+          <div ref="element3" class="animate-zoom-in w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl">
             <h1 class="text-[25px] font-bold ">Web hosting and maintance</h1>
             <p class="mt-[40px]">
               <span class="drop-cap text-orange-600">O</span>ur web hosting and maintenance services offer a comprehensive solution to ensure your website remains secure, up-to-date, and accessible to your audience at all times.
@@ -106,13 +109,13 @@
         </div>
         
         <div class="flex justify-center space-x-[80px] mt-[60px]">
-  <div class="w-[400px] h-[500px] rounded-[10px] shadow-2xl opacity-0 transform -translate-x-full transition-transform duration-1000 ease-in-out"
-       ref="elementToSlideIn1"></div>
-  <div class="w-[400px] h-[500px] rounded-[10px] shadow-2xl opacity-0 transform -translate-x-full transition-transform duration-500 ease-in-out"
-       ref="elementToSlideIn2"></div>
-  <div class="w-[400px] h-[500px] rounded-[10px] shadow-2xl opacity-0 transform -translate-x-full transition-transform duration-3000 ease-in-out"
-       ref="elementToSlideIn3"></div>
-</div>
+          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[10px] shadow-2xl "
+          ref="element4"></div>
+          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[10px] shadow-2xl"
+          ref="element5"></div>
+          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[10px] shadow-2xl "
+          ref="element6"></div>
+        </div>
       </section>
 
       <section>
@@ -124,17 +127,31 @@
 
 <script >
 // import Resume from './components/Resume.vue';
-import { slideInMixin } from './slideInMixin.js';
+// import { slideInMixin } from './slideInMixin.js';
+import { ScrollAnimationMixin } from './ScrollAnimationMixin.js';
 
     export default {
 
-    //   data() {
-    //   return {
-    //     inView: false
-    //   };
-    // },
+      data() {
+        return {
+          animationElements: [
+            { ref: null, inView: false },
+            { ref: null, inView: false },
+            { ref: null, inView: false },
+            { ref: null, inView: false },
+            { ref: null, inView: false },
+            { ref: null, inView: false }
+            
+          ]
+        };
+      },
+      mounted() {
+        this.animationElements.forEach((element, index) => {
+          element.ref = this.$refs['element' + (index + 1)];
+        });
+      },
 
-      mixins: [slideInMixin],
+      mixins: [ScrollAnimationMixin],
 
       // mounted() {
       //   window.addEventListener('scroll', this.handleScroll);
