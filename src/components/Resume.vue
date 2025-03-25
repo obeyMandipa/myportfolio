@@ -8,11 +8,11 @@
             <!-- if there is a button, it will close the modal -->
             <button class="btn btn-sm btn-circle btn-ghost bg-orange-600 text-white hover:text-orange-600 hover:bg-gray-50 font-bolder text-[18px] absolute right-2 top-2">✕</button>
             <div>
-              <h3 class="font-bold text-[25px]">Rufaro Mandipa Obey</h3>
+              <h3 class="font-bold text-[25px] text-blue-400">Rufaro Mandipa Obey</h3>
               <p>1528 Mainway Meadows Waterfalls Harare – 0772 631 954 – mandipaobey@gmail.com</p>
               <br>
 
-              <h1 class="font-bold text-[35px] text-orange-600">Professional summary</h1>
+              <h1 class="font-bold text-[35px] text-blue-400">Professional summary</h1>
               <p>I am a 24 year old male, motivated and dedicated, seeking opportunities to apply my skills and
                   knowledge in a professional setting. Thrives on working in busy and deadline driven settings.
                   Passionate about web development, networking, cloud computing, operating system
@@ -25,7 +25,7 @@
               <p class="border-b-2 border-orange-600"> </p>
               <br>
 
-              <h1 class="font-bold text-[35px] text-orange-600">Professional experience</h1>
+              <h1 class="font-bold text-[35px] text-blue-400">Professional experience</h1>
               <h3 class="font-bold text-[23px]">Lake Harvest Distribution 09/2022 – 06/2023</h3>
               <h4>Information Technology intern</h4>
               <br>
@@ -50,7 +50,7 @@
               <p class="border-b-2 border-orange-600"> </p>
               <br>
 
-              <h1 class="font-bold text-[35px] text-orange-600">Education</h1>
+              <h1 class="font-bold text-[35px] text-blue-400 ">Education</h1>
               <br>
               <h2 class="font-bold text-[22px]">CISCO Networking Academy</h2>
               <p>Certificate In Network Addressing and Basic TroubleShooting</p>
@@ -66,7 +66,7 @@
               <p class="border-b-2 border-orange-600"> </p>
               <br>
 
-              <h1 class="font-bold text-[35px] text-orange-600">Technical skills</h1>
+              <h1 class="font-bold text-[35px] text-blue-400">Technical skills</h1>
               <ul class="ml-[20px]">
                 <li>● Windows server management</li>
                 <li>● Linux operating system</li>

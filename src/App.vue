@@ -12,7 +12,7 @@
               <li @click="scrollToSection('projects')" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Projects</li>
               
               <li onclick="my_modal_4.showModal()" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer ">Resume</li>
-              <!-- <Resume /> -->
+              <Resume />
 
             </ul>
           </div>
@@ -51,49 +51,49 @@
           <p class="w-[550px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, nihil. Quos non maiores, nostrum est molestias amet quaerat ducimus natus praesentium tempore ex dolores asperiores dolorum dicta molestiae a quod.</p>
         </div>
 
-        <div class=" flex justify-center mt-[60px] space-x-[80px]">
+        <div class=" flex justify-center mt-[60px] space-x-[80px] text-white">
 
-          <div ref="element1"  class="animate-zoom-in  w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl">
+          <div ref="element1"  class="animate-zoom-in  w-[400px] h-[500px]  rounded-[10px] shadow-2xl bg-orange-600">
             <h1 class="text-[25px] font-bold ">UI/UX design</h1>
 
             <p class="mt-[40px]">
-              <span class="drop-cap text-orange-600">O</span>ur UI/UX design services focus on creating seamless and intuitive digital experiences that captivate users and drive engagement. 
+              <span class="drop-cap ">O</span>ur UI/UX design services focus on creating seamless and intuitive digital experiences that captivate users and drive engagement. 
               We combine creativity with usability to craft visually stunning interfaces that elevate your brand and enhance user satisfaction.
             </p>
             <h3 class="text-[20px] font-bold mt-[40px] ">Key features</h3>
             <ul>
-              <li> <span class="text-orange-600">●</span>User-Centered Design</li>
-              <li><span class="text-orange-600">●</span>Visual Design</li>
-              <li><span class="text-orange-600">●</span>Responsive Design</li>
+              <li><span class="text-white">●</span>User-Centered Design</li>
+              <li><span class="text-white">●</span>Visual Design</li>
+              <li><span class="text-white">●</span>Responsive Design</li>
             </ul>
           </div>
 
-          <div ref="element2" class="animate-fade-in-right w-[400px] h-[500px] border-orange-600  border-l-[2px] border-b-[2px] rounded-[10px] shadow-2xl">
+          <div ref="element2" class="animate-fade-in-right w-[400px] h-[500px] rounded-[10px] shadow-2xl bg-orange-600">
             <h1 class="text-[25px] font-bold ">Search Engine Optimisation</h1>
             <p class="mt-[40px]">
-              <span class="drop-cap text-orange-600">O</span>ur SEO services are designed to improve your website's visibility in search engine results and drive organic traffic to your online platform. 
+              <span class="drop-cap ">O</span>ur SEO services are designed to improve your website's visibility in search engine results and drive organic traffic to your online platform. 
               We employ proven strategies and best practices to enhance your website's search engine ranking and boost your online presence.
             </p>
             <h3 class="mt-[40px] text-[20px] font-bold">Key features</h3>
             <ul>
-              <li><span class="text-orange-600">●</span>Keyword Research</li>
-              <li><span class="text-orange-600">●</span>On-Page Optimization</li>
-              <li><span class="text-orange-600">●</span>Technical SEO</li>
+              <li><span class="text-white">●</span>Keyword Research</li>
+              <li><span class="text-white">●</span>On-Page Optimization</li>
+              <li><span class="text-white">●</span>Technical SEO</li>
             </ul>
 
           </div>
 
-          <div ref="element3" class="animate-zoom-in w-[400px] h-[500px] border-orange-600  border-l-[2px] border-t-[2px] rounded-[10px] shadow-2xl">
+          <div ref="element3" class="animate-zoom-in w-[400px] h-[500px]  rounded-[10px] shadow-2xl bg-orange-600">
             <h1 class="text-[25px] font-bold ">Web hosting and maintance</h1>
             <p class="mt-[40px]">
-              <span class="drop-cap text-orange-600">O</span>ur web hosting and maintenance services offer a comprehensive solution to ensure your website remains secure, up-to-date, and accessible to your audience at all times.
+              <span class="drop-cap ">O</span>ur web hosting and maintenance services offer a comprehensive solution to ensure your website remains secure, up-to-date, and accessible to your audience at all times.
                We take care of the technical aspects of hosting and maintenance so you can focus on growing your online presence.
             </p>
             <h3 class="text-[25px] font-bold mt-[40px]">Key features </h3>
             <ul>
-              <li><span class="text-orange-600">●</span>Reliable Hosting</li>
-              <li><span class="text-orange-600">●</span>Secuity monitoring</li>
-              <li><span class="text-orange-600">●</span>Technical Support</li>
+              <li><span class="text-white">●</span>Reliable Hosting</li>
+              <li><span class="text-white">●</span>Secuity monitoring</li>
+              <li><span class="text-white">●</span>Technical Support</li>
             </ul>
 
           </div>
@@ -126,7 +126,7 @@
 </template>
 
 <script >
-// import Resume from './components/Resume.vue';
+import Resume from './components/Resume.vue';
 // import { slideInMixin } from './slideInMixin.js';
 import { ScrollAnimationMixin } from './ScrollAnimationMixin.js';
 
@@ -194,9 +194,9 @@ import { ScrollAnimationMixin } from './ScrollAnimationMixin.js';
     //     },
     // },
 
-    // components: {
-      //   Resume,
-      // },
+    components: {
+        Resume,
+      },
 
     };
 
