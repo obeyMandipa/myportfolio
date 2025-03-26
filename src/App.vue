@@ -24,15 +24,18 @@
             <p class="text-[80px] font-bold ">Hello! I am Rufaro Mandipa</p>
             <p class="w-[550px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores fugit sequi iure ipsam sed temporibus! Odio magnam accusamus eos quia, facere soluta expedita laudantium dolorem, pariatur voluptates quod iste aspernatur!</p>
 
-            <div class="">
-              <button class="h-[50px] w-[120px] bg-orange-600">Lets talk</button>
-              <button class="h-[50px] w-[120px] bg-orange-600">View projects</button>
+            <div class=" flex">
+              <button onclick="my_modal_6.showModal()" class="h-[50px] w-[120px] bg-orange-600 text-white font-bold hover:animate-pop">Lets talk</button>
+              <Contact/>
+              <button onclick="my_modal_5.showModal()" class="h-[50px] w-[120px] bg-orange-600 text-white font-bold hover:animate-pop">View projects</button>
+              <Projects/>
+
             </div>
 
             <div class="flex items-center">
-              <p>Check out my social _____</p>
-              <a href="https://github.com/obeyMandipa" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/6424/6424084.png" alt="github" class="h-[35px] w-[35px] rounded-full"></a> 
-              <a href="https://www.linkedin.com/in/rufaro-mandipa-9b4259242?" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422202.png" alt="linkedIn" class="h-[37px] w-[37px] mt-[10px]"></a> 
+              <p>Check out my socials _____</p>
+              <a href="https://github.com/obeyMandipa" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/6424/6424084.png" alt="github" class="h-[35px] w-[35px] hover:animate-pop rounded-full"></a> 
+              <a href="https://www.linkedin.com/in/rufaro-mandipa-9b4259242?" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422202.png" alt="linkedIn" class="h-[37px] w-[37px] hover:animate-pop mt-[10px]"></a> 
             </div>
           </div>
 
@@ -53,7 +56,7 @@
 
         <div class=" flex justify-center mt-[60px] space-x-[80px] text-white">
 
-          <div ref="element1"  class="animate-zoom-in  w-[400px] h-[500px]  rounded-[10px] shadow-2xl bg-orange-600">
+          <div ref="element1"  class="animate-zoom-in  w-[400px] h-[500px]  rounded-[5px] shadow-2xl bg-orange-600">
             <h1 class="text-[25px] font-bold ">UI/UX design</h1>
 
             <p class="mt-[40px]">
@@ -68,7 +71,7 @@
             </ul>
           </div>
 
-          <div ref="element2" class="animate-fade-in-right w-[400px] h-[500px] rounded-[10px] shadow-2xl bg-orange-600">
+          <div ref="element2" class="animate-fade-in-right w-[400px] h-[500px] rounded-[5px] shadow-2xl bg-orange-600">
             <h1 class="text-[25px] font-bold ">Search Engine Optimisation</h1>
             <p class="mt-[40px]">
               <span class="drop-cap ">O</span>ur SEO services are designed to improve your website's visibility in search engine results and drive organic traffic to your online platform. 
@@ -83,7 +86,7 @@
 
           </div>
 
-          <div ref="element3" class="animate-zoom-in w-[400px] h-[500px]  rounded-[10px] shadow-2xl bg-orange-600">
+          <div ref="element3" class="animate-zoom-in w-[400px] h-[500px]  rounded-[5px] shadow-2xl bg-orange-600">
             <h1 class="text-[25px] font-bold ">Web hosting and maintance</h1>
             <p class="mt-[40px]">
               <span class="drop-cap ">O</span>ur web hosting and maintenance services offer a comprehensive solution to ensure your website remains secure, up-to-date, and accessible to your audience at all times.
@@ -109,11 +112,11 @@
         </div>
         
         <div class="flex justify-center space-x-[80px] mt-[60px]">
-          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[10px] shadow-2xl "
+          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[5px] shadow-2xl "
           ref="element4"></div>
-          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[10px] shadow-2xl"
+          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[5px] shadow-2xl"
           ref="element5"></div>
-          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[10px] shadow-2xl "
+          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[5px] shadow-2xl "
           ref="element6"></div>
         </div>
       </section>
@@ -127,6 +130,8 @@
 
 <script >
 import Resume from './components/Resume.vue';
+import Projects from './components/Projects.vue';
+import Contact from './components/Contact.vue';
 // import { slideInMixin } from './slideInMixin.js';
 import { ScrollAnimationMixin } from './ScrollAnimationMixin.js';
 
@@ -196,6 +201,8 @@ import { ScrollAnimationMixin } from './ScrollAnimationMixin.js';
 
     components: {
         Resume,
+        Projects,
+        Contact
       },
 
     };
