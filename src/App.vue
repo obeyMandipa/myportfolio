@@ -1,11 +1,11 @@
 <template>
     
-    <main>
+    <main class="font-[Arial]">
 
       <section class="home">
         <header class="border-b-2 h-[80px] bg-[#ffffff]">
           <div class="flex justify-center items-center gap-28"> <!-- Center the div -->
-            <p class="text-[50px] text-orange-600 font-bold mt-[-30px]">R<span class="text-black">ufaro</span> </p>
+            <p class="text-[70px] text-orange-600 font-bold font-[Dyuthi] mt-[-20px]">R</p><span class="text-black text-[50px] font-bold mt-[-30px] ml-[-120px]">ufaro</span>
             <ul class="flex gap-8 ml-8"> <!-- Add space between list items -->
               <li class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Home</li>
               <li @click="scrollToSection('skills')" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Skills</li>
@@ -21,14 +21,15 @@
         <div class="flex justify-center mt-[60px] ">
           <div class="w-[700px] mt-[60px]">
             <p class="absolute mt-[-50px]"><span class="text-orange-600 text-[60px] mt-[20px] pt-[-60px]">*</span>Web developer</p>
-            <p class="text-[80px] font-bold ">Hello! I am Rufaro Mandipa</p>
-            <p class="w-[550px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores fugit sequi iure ipsam sed temporibus! Odio magnam accusamus eos quia, facere soluta expedita laudantium dolorem, pariatur voluptates quod iste aspernatur!</p>
+            <p class="text-[80px] font-bold font-[] ">Hello! I am Rufaro Mandipa</p>
+            <p class="w-[550px] font-[millanna]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores fugit sequi iure ipsam sed temporibus! Odio magnam accusamus eos quia, facere soluta expedita laudantium dolorem, pariatur voluptates quod iste aspernatur!</p>
 
-            <div class=" flex">
-              <button onclick="my_modal_6.showModal()" class="h-[50px] w-[120px] bg-orange-600 text-white font-bold hover:animate-pop">Lets talk</button>
+            <div class="flex">
+              <button onclick="my_modal_6.showModal()" class="h-[50px] w-[150px] bg-orange-600 text-white font-bold hover:animate-pop shadow-lg shadow-slate-500">Lets talk</button>
               <Contact/>
-              <button onclick="my_modal_5.showModal()" class="h-[50px] w-[120px] bg-orange-600 text-white font-bold hover:animate-pop">View projects</button>
+              <button onclick="my_modal_5.showModal()" class="h-[50px] w-[150px] bg-orange-600 text-white font-bold hover:animate-pop shadow-slate-500 shadow-lg">View projects</button>
               <Projects/>
+              <a href=""></a>
 
             </div>
 
@@ -41,7 +42,7 @@
 
           <div class="w-[700px] h-[600px] ">
           
-              <!-- <img class="w-[700px] h-[600px] border-2 border-white" src="../src/assets/images/propic.png" alt=""> -->
+              <img class=" size-[600px] ml-[100px] border-2 border-white" src="../src/assets/images/propic.jpeg" alt="">
           </div>
         </div>
 
@@ -56,7 +57,7 @@
 
         <div class=" flex justify-center mt-[60px] space-x-[80px] text-white">
 
-          <div ref="element1"  class="animate-zoom-in  w-[400px] h-[500px]  rounded-[5px] shadow-2xl bg-orange-600">
+          <div ref="element1"  class="animate-zoom-in  w-[400px] h-[500px]  rounded-[5px] shadow-2xl shadow-slate-500 bg-orange-600 p-[20px]">
             <h1 class="text-[25px] font-bold ">UI/UX design</h1>
 
             <p class="mt-[40px]">
@@ -71,7 +72,7 @@
             </ul>
           </div>
 
-          <div ref="element2" class="animate-fade-in-right w-[400px] h-[500px] rounded-[5px] shadow-2xl bg-orange-600">
+          <div ref="element2" class="animate-fade-in-right w-[400px] h-[500px] rounded-[5px] shadow-2xl shadow-slate-500 bg-orange-600 p-[20px]">
             <h1 class="text-[25px] font-bold ">Search Engine Optimisation</h1>
             <p class="mt-[40px]">
               <span class="drop-cap ">O</span>ur SEO services are designed to improve your website's visibility in search engine results and drive organic traffic to your online platform. 
@@ -86,7 +87,7 @@
 
           </div>
 
-          <div ref="element3" class="animate-zoom-in w-[400px] h-[500px]  rounded-[5px] shadow-2xl bg-orange-600">
+          <div ref="element3" class="animate-zoom-in w-[400px] h-[500px]  rounded-[5px] shadow-2xl shadow-slate-500 bg-orange-600 p-[20px] ">
             <h1 class="text-[25px] font-bold ">Web hosting and maintance</h1>
             <p class="mt-[40px]">
               <span class="drop-cap ">O</span>ur web hosting and maintenance services offer a comprehensive solution to ensure your website remains secure, up-to-date, and accessible to your audience at all times.
@@ -112,11 +113,11 @@
         </div>
         
         <div class="flex justify-center space-x-[80px] mt-[60px]">
-          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[5px] shadow-2xl "
+          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[5px] shadow-2xl shadow-slate-500 "
           ref="element4"></div>
-          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[5px] shadow-2xl"
-          ref="element5"></div>
-          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[5px] shadow-2xl "
+          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[5px] shadow-2xl shadow-slate-500"
+          ref="element5"></div> 
+          <div class="animate-zoom-in w-[400px] h-[500px] rounded-[5px] shadow-2xl shadow-slate-500 "
           ref="element6"></div>
         </div>
       </section>

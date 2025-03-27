@@ -11,7 +11,7 @@
             <p class="text-[60px] font-bold">Contact Us</p>
 
             <div class="flex  space-x-[20px]">  
-              <div class="shadow-xl w-[500px] space-y-[20px]">
+              <div class=" w-[500px] space-y-[20px]">
                 <input type="text" placeholder="Name" class="input w-[500px] h-[60px]" />
 
                 <label class="input validator w-[500px] h-[60px]">
@@ -26,7 +26,30 @@
 
                 <button class="h-[50px] w-[120px] bg-orange-600 text-white font-bold hover:animate-pop">Send</button>              </div>
 
-              <div class="shadow-xl w-[400px]"></div>
+              <div class=" w-[400px] pl-[20px] space-y-[20px]">
+                <div class="flex space-x-4">
+                  <div class=" w-[40px] h-[40px] mt-[10px]"><img src="../assets/icons/call.png" alt=""></div>
+                  <div class="">
+                    <p class="font-bold text-[19px]">Call us</p>
+                    <p>O772 631 954</p>
+                  </div>
+                </div>
+                <div class="flex space-x-4">
+                  <div class=" w-[40px] h-[40px] mt-[10px]"><img src="../assets/icons/email.png" alt="" class=""></div>
+                  <div class="">
+                    <p class="font-bold text-[19px]">Email</p>
+                    <i class="fi fi-rr-phone-call"></i>
+                    <p>mandipaobey@gmail.com</p>
+                  </div>
+                </div>
+                <div class="flex space-x-4">
+                  <div class=" w-[40px] h-[40px] mt-[10px]"><img src="../assets/icons/address.png" alt=""></div>
+                  <div class="">
+                    <p class="font-bold text-[19px]">Address</p>
+                    <p>1528 Mainwya Meadows Waterfalls Harare</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </form>
         </div>
@@ -55,6 +78,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 
 </style>
 
