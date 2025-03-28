@@ -42,7 +42,7 @@
 
           <div class="w-[700px] h-[600px] ">
           
-              <img class=" size-[600px] ml-[100px] border-2 border-white" src="../src/assets/images/propic.jpeg" alt="">
+              <img class=" size-[700px] ml-[100px] border-2 border-white" src="../src/assets/images/propic.jpeg" alt="">
           </div>
         </div>
 
@@ -55,9 +55,10 @@
           <p class="w-[550px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, nihil. Quos non maiores, nostrum est molestias amet quaerat ducimus natus praesentium tempore ex dolores asperiores dolorum dicta molestiae a quod.</p>
         </div>
 
-        <div class=" flex justify-center mt-[60px] space-x-[80px] text-white">
+        <div class=" flex justify-center mt-[60px] space-x-[80px] ">
 
-          <div ref="element1"  class="animate-zoom-in  w-[400px] h-[500px]  rounded-[5px] shadow-2xl shadow-slate-500 bg-orange-600 p-[20px]">
+          <div ref="element1"  class="animate-zoom-in  w-[400px] h-[500px]  rounded-[5px] shadow-2xl shadow-slate-500  p-[20px] ">
+              <img src="./assets/icons/uiux.png" alt="" class="absolute size-[60px] rounded-full  ml-[-40px] mt-[-35px]  p-2 bg-orange-600 ">
             <h1 class="text-[25px] font-bold ">UI/UX design</h1>
 
             <p class="mt-[40px]">
@@ -66,13 +67,14 @@
             </p>
             <h3 class="text-[20px] font-bold mt-[40px] ">Key features</h3>
             <ul>
-              <li><span class="text-white">●</span>User-Centered Design</li>
-              <li><span class="text-white">●</span>Visual Design</li>
-              <li><span class="text-white">●</span>Responsive Design</li>
+              <li><span class="">●</span>User-Centered Design</li>
+              <li><span class="">●</span>Visual Design</li>
+              <li><span class="">●</span>Responsive Design</li>
             </ul>
           </div>
 
-          <div ref="element2" class="animate-fade-in-right w-[400px] h-[500px] rounded-[5px] shadow-2xl shadow-slate-500 bg-orange-600 p-[20px]">
+          <div ref="element2" class="animate-fade-in-right w-[400px] h-[500px] rounded-[5px] shadow-2xl shadow-slate-500  p-[20px]">
+            <img src="./assets/icons/SOP.png" alt="" class="absolute size-[60px] rounded-full  ml-[-40px] mt-[-35px]  p-2 bg-orange-600 ">
             <h1 class="text-[25px] font-bold ">Search Engine Optimisation</h1>
             <p class="mt-[40px]">
               <span class="drop-cap ">O</span>ur SEO services are designed to improve your website's visibility in search engine results and drive organic traffic to your online platform. 
@@ -80,14 +82,15 @@
             </p>
             <h3 class="mt-[40px] text-[20px] font-bold">Key features</h3>
             <ul>
-              <li><span class="text-white">●</span>Keyword Research</li>
-              <li><span class="text-white">●</span>On-Page Optimization</li>
-              <li><span class="text-white">●</span>Technical SEO</li>
+              <li><span class="">●</span>Keyword Research</li>
+              <li><span class="">●</span>On-Page Optimization</li>
+              <li><span class="">●</span>Technical SEO</li>
             </ul>
 
           </div>
 
-          <div ref="element3" class="animate-zoom-in w-[400px] h-[500px]  rounded-[5px] shadow-2xl shadow-slate-500 bg-orange-600 p-[20px] ">
+          <div ref="element3" class="animate-zoom-in w-[400px] h-[500px]  rounded-[5px] shadow-2xl shadow-slate-500  p-[20px] ">
+            <img src="./assets/icons/Hosting.png" alt="" class="absolute size-[60px] rounded-full  ml-[-40px] mt-[-35px]  p-2 bg-orange-600 ">
             <h1 class="text-[25px] font-bold ">Web hosting and maintance</h1>
             <p class="mt-[40px]">
               <span class="drop-cap ">O</span>ur web hosting and maintenance services offer a comprehensive solution to ensure your website remains secure, up-to-date, and accessible to your audience at all times.
@@ -95,9 +98,9 @@
             </p>
             <h3 class="text-[25px] font-bold mt-[40px]">Key features </h3>
             <ul>
-              <li><span class="text-white">●</span>Reliable Hosting</li>
-              <li><span class="text-white">●</span>Secuity monitoring</li>
-              <li><span class="text-white">●</span>Technical Support</li>
+              <li><span class="">●</span>Reliable Hosting</li>
+              <li><span class="">●</span>Secuity monitoring</li>
+              <li><span class="">●</span>Technical Support</li>
             </ul>
 
           </div>
