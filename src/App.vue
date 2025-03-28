@@ -5,13 +5,13 @@
       <section class="home">
         <header class="border-b-2 h-[80px] bg-[#ffffff]">
           <div class="flex justify-center items-center gap-28"> <!-- Center the div -->
-            <p class="text-[70px] text-orange-600 font-bold font-[Dyuthi] mt-[-20px]">R</p><span class="text-black text-[50px] font-bold mt-[-30px] ml-[-120px]">ufaro</span>
+            <p class="text-[70px] text-orange-600 font-bold font-[Dyuthi] mt-[-10px]">R</p><span class="text-black text-[50px] font-bold mt-[-30px] ml-[-120px]">ufaro</span>
             <ul class="flex gap-8 ml-8"> <!-- Add space between list items -->
-              <li class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Home</li>
-              <li @click="scrollToSection('skills')" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Skills</li>
-              <li @click="scrollToSection('projects')" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Projects</li>
+              <li class="text-[19px] h-[58px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Home</li>
+              <li @click="scrollToSection('skills')" class="text-[19px] h-[58px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Skills</li>
+              <li @click="scrollToSection('projects')" class="text-[19px] h-[58px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer">Projects</li>
               
-              <li onclick="my_modal_4.showModal()" class="text-[19px] h-[60px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer ">Resume</li>
+              <li onclick="my_modal_4.showModal()" class="text-[19px] h-[58px] border-b-2 hover:text-orange-600 hover:border-orange-600 cursor-pointer ">Resume</li>
               <Resume />
 
             </ul>
@@ -20,9 +20,11 @@
 
         <div class="flex justify-center mt-[60px] ">
           <div class="w-[700px] mt-[60px]">
-            <p class="absolute mt-[-50px]"><span class="text-orange-600 text-[60px] mt-[20px] pt-[-60px]">*</span>Web developer</p>
-            <p class="text-[80px] font-bold font-[] ">Hello! I am Rufaro Mandipa</p>
-            <p class="w-[550px] font-[millanna]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores fugit sequi iure ipsam sed temporibus! Odio magnam accusamus eos quia, facere soluta expedita laudantium dolorem, pariatur voluptates quod iste aspernatur!</p>
+            <p class="absolute mt-[-50px] text-orange-600 font-bold"><span class="text-orange-600 text-[60px] mt-[20px] pt-[-60px]">*</span>Web developer</p>
+            <p class="gradient1 text-[80px] font-bold font-[] ">Hello! I am Rufaro Mandipa</p>
+            <p class="w-[550px] text-[18px]">I am a passionate and innovative web developer 
+              with a keen eye for detail and a love for creating engaging digital experiences. I am dedicated 
+              to delivering high-quality, user-friendly websites that exceed expectations. </p>
 
             <div class="flex">
               <button onclick="my_modal_6.showModal()" class="h-[50px] w-[150px] bg-orange-600 text-white font-bold hover:animate-pop shadow-lg shadow-slate-500">Lets talk</button>
@@ -34,7 +36,7 @@
             </div>
 
             <div class="flex items-center">
-              <p>Check out my socials _____</p>
+              <p class="text-[18px]">Check out my socials _____</p>
               <a href="https://github.com/obeyMandipa" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/6424/6424084.png" alt="github" class="h-[35px] w-[35px] hover:animate-pop rounded-full"></a> 
               <a href="https://www.linkedin.com/in/rufaro-mandipa-9b4259242?" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/6422/6422202.png" alt="linkedIn" class="h-[37px] w-[37px] hover:animate-pop mt-[10px]"></a> 
             </div>
@@ -42,7 +44,7 @@
 
           <div class="w-[700px] h-[600px] ">
           
-              <img class=" size-[700px] ml-[100px] border-2 border-white" src="../src/assets/images/propic.jpeg" alt="">
+              <img class=" size-[700px] ml-[100px] border-2 border-white " src="../src/assets/images/propic.jpeg" alt="">
           </div>
         </div>
 
@@ -50,9 +52,10 @@
 
       <section id="skills" class="skills p-[20px]">
         <div class="ml-[270px] ">
-          <p class=""><span class="text-orange-600  text-[60px] pt-[-60px]">*</span>Skills</p>
-          <p class="text-[60px] font-bold ">What i can do for you!</p>
-          <p class="w-[550px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, nihil. Quos non maiores, nostrum est molestias amet quaerat ducimus natus praesentium tempore ex dolores asperiores dolorum dicta molestiae a quod.</p>
+          <p class="text-orange-600 font-bold"><span class="text-orange-600  text-[60px] pt-[-60px]">*</span>Skills</p>
+          <p class="gradient text-[60px] font-bold ">What i can do for you!</p>
+          <p class="w-[550px] text-[18px]">Harnessing my expertise in web development, I bring your vision to
+             life through custom solutions tailored to your needs, by blending creativity with functionality,.</p>
         </div>
 
         <div class=" flex justify-center mt-[60px] space-x-[80px] ">
@@ -61,12 +64,11 @@
               <img src="./assets/icons/uiux.png" alt="" class="absolute size-[60px] rounded-full  ml-[-40px] mt-[-35px]  p-2 bg-orange-600 ">
             <h1 class="text-[25px] font-bold ">UI/UX design</h1>
 
-            <p class="mt-[40px]">
-              <span class="drop-cap ">O</span>ur UI/UX design services focus on creating seamless and intuitive digital experiences that captivate users and drive engagement. 
-              We combine creativity with usability to craft visually stunning interfaces that elevate your brand and enhance user satisfaction.
-            </p>
+            <p class="mt-[40px] text-[18px]">
+              <span class="drop-cap ">O</span>ur UI/UX esign services prioritize seamless digital experiences that captivate users, driving engagement through visually stunning and user-friendly interfaces.
+               </p>
             <h3 class="text-[20px] font-bold mt-[40px] ">Key features</h3>
-            <ul>
+            <ul class="text-[18px]">
               <li><span class="">●</span>User-Centered Design</li>
               <li><span class="">●</span>Visual Design</li>
               <li><span class="">●</span>Responsive Design</li>
@@ -76,12 +78,12 @@
           <div ref="element2" class="animate-fade-in-right w-[400px] h-[500px] rounded-[5px] shadow-2xl shadow-slate-500  p-[20px]">
             <img src="./assets/icons/SOP.png" alt="" class="absolute size-[60px] rounded-full  ml-[-40px] mt-[-35px]  p-2 bg-orange-600 ">
             <h1 class="text-[25px] font-bold ">Search Engine Optimisation</h1>
-            <p class="mt-[40px]">
+            <p class="mt-[40px] text-[18px]">
               <span class="drop-cap ">O</span>ur SEO services are designed to improve your website's visibility in search engine results and drive organic traffic to your online platform. 
-              We employ proven strategies and best practices to enhance your website's search engine ranking and boost your online presence.
+              
             </p>
             <h3 class="mt-[40px] text-[20px] font-bold">Key features</h3>
-            <ul>
+            <ul class="text-[18px]">
               <li><span class="">●</span>Keyword Research</li>
               <li><span class="">●</span>On-Page Optimization</li>
               <li><span class="">●</span>Technical SEO</li>
@@ -92,12 +94,13 @@
           <div ref="element3" class="animate-zoom-in w-[400px] h-[500px]  rounded-[5px] shadow-2xl shadow-slate-500  p-[20px] ">
             <img src="./assets/icons/Hosting.png" alt="" class="absolute size-[60px] rounded-full  ml-[-40px] mt-[-35px]  p-2 bg-orange-600 ">
             <h1 class="text-[25px] font-bold ">Web hosting and maintance</h1>
-            <p class="mt-[40px]">
-              <span class="drop-cap ">O</span>ur web hosting and maintenance services offer a comprehensive solution to ensure your website remains secure, up-to-date, and accessible to your audience at all times.
-               We take care of the technical aspects of hosting and maintenance so you can focus on growing your online presence.
+            <p class="mt-[40px] text-[18px]">
+              <span class="drop-cap ">O</span>ur web hosting and maintenance services offer a comprehensive solution to ensure your 
+              website remains secure, up-to-date, and accessible to your audience at all times.
+               
             </p>
             <h3 class="text-[25px] font-bold mt-[40px]">Key features </h3>
-            <ul>
+            <ul class="text-[18px]">
               <li><span class="">●</span>Reliable Hosting</li>
               <li><span class="">●</span>Secuity monitoring</li>
               <li><span class="">●</span>Technical Support</li>
@@ -110,9 +113,9 @@
       <section id="projects" class="projects p-[20px]">
 
         <div class="relative ml-[270px]">
-          <div class=""><span class="text-orange-600  text-[60px]  pt-[-60px]">*</span>Projects</div>
-          <div class="text-[60px] font-bold ">What i have done!</div>
-          <p class="w-[550px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, nihil. Quos non maiores, nostrum est molestias amet quaerat ducimus natus praesentium tempore ex dolores asperiores dolorum dicta molestiae a quod.</p>
+          <div class="text-orange-600 font-bold"><span class="text-orange-600  text-[60px]  pt-[-60px]">*</span>Projects</div>
+          <div class="gradient text-[60px] font-bold ">What i have done!</div>
+          <p class="w-[550px] text-[18px]">Explore a showcase of my past projects where creativity meets functionality. From sleek and intuitive designs to robust back-end solutions.</p>
         </div>
         
         <div class="flex justify-center space-x-[80px] mt-[60px]">
@@ -250,6 +253,22 @@ import { ScrollAnimationMixin } from './ScrollAnimationMixin.js';
     line-height: 0.8; /* Adjust line height to align properly */
     margin-right: 0.5rem; /* Space between the drop cap and the rest of the text */
     font-weight: bold; /* Optional: Make the drop cap bold */
+  }
+
+  .gradient{
+    background: #000000;
+    background: linear-gradient(to right, #000000 0%, #ffffff 45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+
+  .gradient1{
+    background: #000000;
+    background: linear-gradient(to right, #000000 0%, #ffffff 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
   }
 
   
